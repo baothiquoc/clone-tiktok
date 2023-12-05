@@ -12,6 +12,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
+import routesConfig from '~/config/routes';
 
 import Button from '~/components/Button';
 import styles from './Header.module.scss';
@@ -93,7 +95,10 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={image.logo} alt="TikTok"></img>
+                <Link to={routesConfig.home}>
+                    {' '}
+                    <img src={image.logo} alt="TikTok" />{' '}
+                </Link>
                 <Search />
                 <div className={cx('actions')}>
                     {currentUser ? (
@@ -130,9 +135,9 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/d1db97d606b492159522b6d94fc4115c.jpeg?x-expires=1701158400&x-signature=WvrnvKrRXwN2dvEYKUnE1wv41fc%3D"
+                                src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/d1db97d606b492159522b6d94fc4115c.jpeg?x-expires=1701968400&x-signature=T04Z2n0o8GPyG%2BPMyl8wREiLiZM%3D"
                                 alt="Nguyen Van A"
-                                fallback="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/0134e7289c6d85375ea6bca262091fb2.jpeg?x-expires=1701277200&x-signature=P2ylIjopoPwvY%2Bq5tWT3TSMNiiM%3D"
+                                fallback="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/0134e7289c6d85375ea6bca262091fb2.jpeg?x-expires=1701968400&x-signature=A0%2FfZpHMSRG%2BSRCXle69KN35Uq8%3D"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
