@@ -135,9 +135,9 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/d1db97d606b492159522b6d94fc4115c.jpeg?x-expires=1702227600&x-signature=zcz%2Bz8VYG3yafyc8VSoVHKeFLjA%3D"
+                                src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/408798112_997939874603626_559012522344764812_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=plJ39ALghucAX9Sbj-W&_nc_ht=scontent.fhan15-1.fna&oh=00_AfAJpmHIu4seBuauYX-jbfmFngNNnvXW8qUYVyzurIY9eA&oe=657BF82E"
                                 alt="Nguyen Van A"
-                                fallback="https://p9-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/0134e7289c6d85375ea6bca262091fb2.jpeg?x-expires=1702227600&x-signature=q3k4xbUx2ZPhShg9xMlVwKke8Dw%3D"
+                                fallback="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/290373099_3299559506981099_2086681085201524195_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=j-kGOSFxEkwAX-MvOdM&_nc_ht=scontent.fhan15-2.fna&oh=00_AfAj_gWOurrZbuahI2C2FmTj6RjdpC9yV1XPXDgVO1yS_Q&oe=657BD217"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
